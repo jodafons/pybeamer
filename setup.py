@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
   name = 'pybeamer',
-  version = '2.0.0',
+  version = '1.0.0',
   license='GPL-3.0',
   description = '',
   long_description = long_description,
@@ -13,7 +13,7 @@ setuptools.setup(
   packages=setuptools.find_packages(),
   author = 'João Victor da Fonseca Pinto, Werner Freund',
   author_email = 'jodafons@lps.ufrj.br, wsfreund@lps.ufrj.br',
-  url = 'https://github.com/ringer-softwares/pybeamer',
+  url = 'https://github.com/jodafons/pybeamer',
   keywords = ['python', 'beamer', 'tex'],
   install_requires=[
           'numpy',
