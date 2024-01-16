@@ -131,6 +131,8 @@ outlineSession = BeamerSection( BeamerOutlineSlide()
                               , name = "Outline"
                               , star = True
                               , _contextManaged = False )
+#outlineSession = BeamerOutlineSlide()
+
 
 class _BeamerPhantomSectionBase( _BeamerSectionBase ):
   """

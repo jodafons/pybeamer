@@ -211,7 +211,9 @@ class PDFTexOutput( TexSessionStream ):
       with open( self.outputFile.replace('pdf','tex'), 'w' ) as f:
         f.write( str(latexCode) )
       subprocess.check_call(['pdflatex', self.outputFile.replace('pdf','tex') ],stdout=subprocess.DEVNULL)
-      
+      # NOTE: compile twice to force outline
+      subprocess.check_call(['pdflatex', self.outputFile.replace('pdf','tex') ],stdout=subprocess.DEVNULL)
+
       
       for ext in ['aux','log','out','snm','toc', 'nav']:
         try:
